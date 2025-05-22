@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="renderer.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column - Search Section -->
+        <div class="left-column">
+            <div class="search-section">
+                <h2>Enter a City Name</h2>
+                <input type="text" id="cityInput" placeholder="E.g., New York, London, Tokyo">
+                <div class="button-group">
+                    <button id="searchBtn">Search</button>
+                    <div class="divider">or</div>
+                    <button id="locationBtn">Use Current Location</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column - Weather Information -->
+        <div class="right-column">
+            <div class="current-weather">
+                <h2 id="currentCity">-</h2>
+                <div class="weather-details">
+                    <div>Temperature: <span id="currentTemp">-</span></div>
+                    <div>Wind: <span id="currentWind">-</span></div>
+                    <div>Humidity: <span id="currentHumidity">-</span></div>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h2>4-Day Forecast</h2>
+                <div class="forecast-items" id="forecastContainer"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
